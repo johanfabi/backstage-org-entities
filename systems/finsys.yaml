@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: "finsys"
+  title: "FinSys"
+  description: "Sistema de Finanzas"
+spec:
+  owner: "${{ parameters.owner | split('/') | last }}"
+  domain: "${{ steps['fetch-owner'].output.entity.spec.domain | split('/') | last }}"
