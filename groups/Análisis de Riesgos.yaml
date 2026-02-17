@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: "Análisis de Riesgos"
+  description: "Análisis de Riesgos"
+  annotations:
+    backstage.io/managed-by-domain: "${{ parameters.domain | split('/') | last }}"
+spec:
+  type: community
+  domain: "${{ parameters.domain | split('/') | last }}"
+  children: []
