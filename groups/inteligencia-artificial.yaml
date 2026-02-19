@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: inteligencia-artificial
+  title: Inteligencia Artificial
+  description: Inteligencia Artificial
+spec:
+  type: community
+  children: []
